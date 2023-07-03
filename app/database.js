@@ -9,11 +9,9 @@ var authentication =
     : "";
 var connectionString = "mongodb://" + authentication + DB_HOST + "/" + DB_NAME;
 console.log(connectionString);
-// mongoose.connect(connectionString, { "useUnifiedTopology": true, 'useFindAndModify': false });
-mongoose.connect('mongodb://localhost:27017/scraper-db',
+mongoose.connect(connectionString,
   {
     useNewUrlParser: true,
-    // useFindAndModify: false,
     useUnifiedTopology: true
   }
 );

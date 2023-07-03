@@ -15,7 +15,6 @@ const welcome = (req, res) => {
 }
 const scrapWebsite = async(req, res) => {
     try {
-        console.log("INisd enode", req.body)
         var result = await Meta.parser(req.body.websiteUrl);
 
         let message="Inserted successfully";
